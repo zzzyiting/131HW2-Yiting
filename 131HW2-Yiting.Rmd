@@ -3,8 +3,8 @@ title: "HW2"
 author: "Yiting Zhang"
 date: '2022-04-10'
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -51,6 +51,7 @@ abalone <- abalone%>%
 
 ggplot(data=abalone, aes(age)) + geom_histogram()
 ```
+
 By plotting a histogram, it seems like the abalone age data follows a normal distribution which skewed to the right a little bit with center around 10.
 
 
@@ -144,6 +145,8 @@ prediction <-predict(lm_fit, new_data = Q6_data)
 
 prediction
 ```
+
+19.84488	years old by prediction.
 
 
 ### Question 7
